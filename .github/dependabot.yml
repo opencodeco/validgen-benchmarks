@@ -4,6 +4,9 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    ignore:
+      # Color helpers are checked against validator v10.28.0.
+      - dependency-name: github.com/go-playground/validator/v10
   - package-ecosystem: github-actions
     directory: /
     schedule:
